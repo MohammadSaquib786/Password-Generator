@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,41 @@
     <link rel="preconnect" href="">
     <link rel="stylesheet" href="mini.css">
 </head>
+
 <body>
-    
-        <div class="container">
-            <h1>Password Generator</h1>
 
-            <div class="display-container">
-                <input readonly placeholder="Password" class="display" data-passwordDisplay>
+    <div class="container">
+        <h1>Password Generator</h1>
 
-                <button class="copybtn" data-copy >
-                     <span data-copyMsg  class="tooltip"></span>
-                     <img src="copy.png" width="=33" height="33">
-                </button>
+        <div class="display-container">
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+
+            <button class="copybtn" data-copy>
+                <span data-copyMsg class="tooltip"></span>
+                <img src="copy.png" width="=33" height="33">
+            </button>
+        </div>
+
+        <!-- Password length section -->
+        <div class="input-container">
+
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthNumber>0</p>
             </div>
 
-                <!-- Password length section -->
-            <div class="input-container">
+            <!-- Slider-Section.... -->
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
 
-                    <div class="length-container">
-                        <p>Password Length</p>
-                        <p data-lengthNumber>0</p>
-                    </div>
 
-                 <!-- Slider-Section.... -->
-            <input type="range" min="1" max="20"  class="slider" step="1" data-lengthSlider>   
 
-           
-
-                  <!-- CheckBoxes..... -->
+            <!-- CheckBoxes..... -->
             <div class="check">
                 <input type="checkbox" id="uppercase">
                 <leable for="uppercase">Include Upper Case Latters</leable>
-    
+
             </div>
-           
+
             <div class="check">
                 <input type="checkbox" id="lowercase">
                 <leable for="lowercase">Include Lower Case Latters</leable>
@@ -54,24 +56,25 @@
 
             <div class="check">
                 <input type="checkbox" id="symbols">
-                <leable for="symbols">Include  Symbols </leable>
+                <leable for="symbols">Include Symbols </leable>
             </div>
 
             <!-- Strength Section -->
-            
+
 
             <div class="strength-container">
-                <p >Strength</p>
+                <p>Strength</p>
                 <div class="indicator" data-indicator></div>
-        </div>
+            </div>
 
-         <!-- Generator- Password -->
-         <button class="generateButton">Generator Password</button>
+            <!-- Generator- Password -->
+            <button class="generateButton">Generator Password</button>
 
         </div>
     </div>
 
 
-        <script src="mini.js"></script>
+    <script src="mini.js"></script>
 </body>
+
 </html>
